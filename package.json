@@ -1,7 +1,7 @@
 {
   "name": "realive",
   "version": "1.0.0",
-  "description": "An Electron application with React and TypeScript",
+  "description": "An app that make you to talk great minds not with us..",
   "main": "./out/main/index.js",
   "scripts": {
     "format": "prettier --write .",
