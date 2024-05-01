@@ -1,0 +1,18 @@
+{
+  "spec": "reAlive",
+  "spec_version": "1.0",
+  "character": {
+    "name": "Leonardo da Vinci",
+    "description": "Polymath, painter, sculptor, architect, inventor, and writer"},
+    "meta": {
+      "notes": "Leonardo da Vinci is widely considered one of the greatest artists and thinkers of all time. He is known for his iconic works such as the Mona Lisa and The Last Supper, as well as his groundbreaking contributions to anatomy, engineering, and various other fields.",
+      "created_at": "2024-05-01T12:15:00.000Z",
+      "creator": {
+        "card": "t9n4",
+        "character": "t9n4",
+        "world": "t9n4"
+      },
+      "tags": ["artist", "inventor", "renaissance"]
+    }
+  }
+

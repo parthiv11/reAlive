@@ -1,0 +1,22 @@
+{
+  "spec": "reAlive",
+  "spec_version": "1.0",
+  "character": {
+    "name": "Albert Einstein",
+    "description": "Theoretical physicist and Nobel laureate"
+  },
+  "meta": {
+    "notes": "Albert Einstein is one of the most influential scientists of the 20th century, best known for developing the theory of relativity. His work revolutionized our understanding of space, time, and gravity. Einstein's intellect, curiosity, and humanitarian values continue to inspire scientists and thinkers worldwide.",
+    "created_at": "2024-05-01T12:45:00.000Z",
+    "creator": {
+      "card": "t9n4",
+      "character": "t9n4",
+      "world": "t9n4"
+    },
+    "tags": [
+      "physicist",
+      "theory of relativity",
+      "genius"
+    ]
+  }
+}

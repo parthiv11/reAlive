@@ -1,0 +1,387 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  /* Sunny Saffron theme */
+  .sunny-saffron {
+    /* Logo button gradients */
+    --logo-from: hsl(30, 100%, 45%);
+    --logo-to: hsl(40, 100%, 55%);
+
+    /* Background */
+    --background: hsl(30, 22%, 90%);
+
+    /* Navigational elements */
+    --nav-primary: hsl(30, 22%, 85%);
+    --nav-secondary: hsl(30, 22%, 92%);
+
+    /* Containers */
+    --container-primary: hsl(30, 22%, 97%);
+    --container-secondary: hsl(30, 22%, 92%);
+    --container-tertiary: hsl(30, 22%, 82%);
+
+    /* Text colors */
+    --tx-primary: hsl(30, 100%, 15%);
+    --tx-secondary: hsl(30, 50%, 50%);
+    --tx-tertiary: hsl(30, 55%, 65%);
+
+    /* Input elements */
+    --input-primary: hsl(30, 22%, 92%);
+    --input-secondary: hsl(30, 22%, 80%);
+    --input-tertiary: hsl(30, 22%, 88%);
+
+    /* Chat */
+    /* User message */
+    --chat-user-from: hsl(30, 100%, 85%);
+    --chat-user-to: hsl(30, 100%, 80%);
+    --chat-user-blockquote-bar: hsl(30, 100%, 70%);
+
+    /* Character message */
+    --chat-character-from: hsl(30, 22%, 80%);
+    --chat-character-to: hsl(30, 22%, 85%);
+    --chat-character-blockquote-bar: hsl(30, 22%, 90%);
+
+    /* Cards */
+    --collection-card: hsl(30, 22%, 85%);
+    --collection-card-hover: hsl(30, 22%, 81%);
+    --collection-card-tag: hsl(30, 22%, 75%);
+
+    /* Hover color */
+    --accent: hsl(30, 22%, 80%);
+
+    /* Borders */
+    --line: hsl(30, 22%, 82%);
+
+    /* Scroll bar */
+    --scroll-primary-thumb: hsl(30, 22%, 70%);
+    --scroll-primary-track: hsl(30, 22%, 82%);
+    --scroll-secondary-thumb: hsl(30, 22%, 75%);
+    --scroll-secondary-track: hsl(30, 22%, 88%);
+
+    /* Floating elements */
+    --float: hsl(30, 22%, 90%);
+
+    /* Action buttons */
+    --action-primary: hsl(30, 100%, 70%);
+    --action-secondary: hsl(30, 50%, 70%);
+    --action-tertiary: hsl(30, 22%, 65%);
+  }
+
+  /* Forest Green theme */
+  .forest-green {
+    /* Logo button gradients */
+    --logo-from: hsl(130, 50%, 35%);
+    --logo-to: hsl(140, 50%, 45%);
+
+    /* Background */
+    --background: hsl(130, 22%, 90%);
+
+    /* Navigational elements */
+    --nav-primary: hsl(130, 22%, 85%);
+    --nav-secondary: hsl(130, 22%, 92%);
+
+    /* Containers */
+    --container-primary: hsl(130, 22%, 97%);
+    --container-secondary: hsl(130, 22%, 92%);
+    --container-tertiary: hsl(130, 22%, 82%);
+
+    /* Text colors */
+    --tx-primary: hsl(130, 50%, 15%);
+    --tx-secondary: hsl(130, 25%, 50%);
+    --tx-tertiary: hsl(130, 28%, 65%);
+
+    /* Input elements */
+    --input-primary: hsl(130, 22%, 92%);
+    --input-secondary: hsl(130, 22%, 80%);
+    --input-tertiary: hsl(130, 22%, 88%);
+
+    /* Chat */
+    /* User message */
+    --chat-user-from: hsl(130, 50%, 85%);
+    --chat-user-to: hsl(130, 50%, 80%);
+    --chat-user-blockquote-bar: hsl(130, 50%, 70%);
+
+    /* Character message */
+    --chat-character-from: hsl(130, 22%, 80%);
+    --chat-character-to: hsl(130, 22%, 85%);
+    --chat-character-blockquote-bar: hsl(130, 22%, 90%);
+
+    /* Cards */
+    --collection-card: hsl(130, 22%, 85%);
+    --collection-card-hover: hsl(130, 22%, 81%);
+    --collection-card-tag: hsl(130, 22%, 75%);
+
+    /* Hover color */
+    --accent: hsl(130, 22%, 80%);
+
+    /* Borders */
+    --line: hsl(130, 22%, 82%);
+
+    /* Scroll bar */
+    --scroll-primary-thumb: hsl(130, 22%, 70%);
+    --scroll-primary-track: hsl(130, 22%, 82%);
+    --scroll-secondary-thumb: hsl(130, 22%, 75%);
+    --scroll-secondary-track: hsl(130, 22%, 88%);
+
+    /* Floating elements */
+    --float: hsl(130, 22%, 90%);
+
+    /* Action buttons */
+    --action-primary: hsl(130, 50%, 70%);
+    --action-secondary: hsl(130, 25%, 70%);
+    --action-tertiary: hsl(130, 22%, 65%);
+  }
+
+  .ocean-blue {
+    /* Logo button gradients */
+    --logo-from: hsl(210, 80%, 45%);
+    --logo-to: hsl(220, 80%, 55%);
+
+    /* Background */
+    --background: hsl(210, 22%, 95%);
+
+    /* Navigational elements */
+    --nav-primary: hsl(210, 22%, 90%);
+    --nav-secondary: hsl(210, 22%, 95%);
+
+    /* Containers */
+    --container-primary: hsl(210, 22%, 97%);
+    --container-secondary: hsl(210, 22%, 95%);
+    --container-tertiary: hsl(210, 22%, 85%);
+
+    /* Text colors */
+    --tx-primary: hsl(210, 80%, 25%);
+    --tx-secondary: hsl(210, 40%, 55%);
+    --tx-tertiary: hsl(210, 45%, 70%);
+
+    /* Input elements */
+    --input-primary: hsl(210, 22%, 95%);
+    --input-secondary: hsl(210, 22%, 85%);
+    --input-tertiary: hsl(210, 22%, 90%);
+
+    /* Chat */
+    /* User message */
+    --chat-user-from: hsl(210, 80%, 85%);
+    --chat-user-to: hsl(210, 80%, 80%);
+    --chat-user-blockquote-bar: hsl(210, 80%, 70%);
+
+    /* Character message */
+    --chat-character-from: hsl(210, 22%, 85%);
+    --chat-character-to: hsl(210, 22%, 90%);
+    --chat-character-blockquote-bar: hsl(210, 22%, 95%);
+
+    /* Cards */
+    --collection-card: hsl(210, 22%, 85%);
+    --collection-card-hover: hsl(210, 22%, 81%);
+    --collection-card-tag: hsl(210, 22%, 75%);
+
+    /* Hover color */
+    --accent: hsl(210, 22%, 80%);
+
+    /* Borders */
+    --line: hsl(210, 22%, 82%);
+
+    /* Scroll bar */
+    --scroll-primary-thumb: hsl(210, 22%, 70%);
+    --scroll-primary-track: hsl(210, 22%, 82%);
+    --scroll-secondary-thumb: hsl(210, 22%, 75%);
+    --scroll-secondary-track: hsl(210, 22%, 88%);
+
+    /* Floating elements */
+    --float: hsl(210, 22%, 90%);
+
+    /* Action buttons */
+    --action-primary: hsl(210, 80%, 70%);
+    --action-secondary: hsl(210, 40%, 70%);
+    --action-tertiary: hsl(210, 22%, 65%);
+  }
+
+  /* Mountain Gray theme */
+  .mountain-gray {
+    /* Logo button gradients */
+    --logo-from: hsl(210, 5%, 75%);
+    --logo-to: hsl(210, 10%, 85%);
+
+    /* Background */
+    --background: hsl(210, 5%, 90%);
+
+    /* Navigational elements */
+    --nav-primary: hsl(210, 5%, 85%);
+    --nav-secondary: hsl(210, 5%, 90%);
+
+    /* Containers */
+    --container-primary: hsl(210, 5%, 95%);
+    --container-secondary: hsl(210, 5%, 90%);
+    --container-tertiary: hsl(210, 5%, 80%);
+
+    /* Text colors */
+    --tx-primary: hsl(210, 5%, 20%);
+    --tx-secondary: hsl(210, 5%, 55%);
+    --tx-tertiary: hsl(210, 5%, 70%);
+
+    /* Input elements */
+    --input-primary: hsl(210, 5%, 90%);
+    --input-secondary: hsl(210, 5%, 80%);
+    --input-tertiary: hsl(210, 5%, 85%);
+
+    /* Chat */
+    /* User message */
+    --chat-user-from: hsl(210, 5%, 85%);
+    --chat-user-to: hsl(210, 5%, 80%);
+    --chat-user-blockquote-bar: hsl(210, 5%, 70%);
+
+    /* Character message */
+    --chat-character-from: hsl(210, 5%, 80%);
+    --chat-character-to: hsl(210, 5%, 85%);
+    --chat-character-blockquote-bar: hsl(210, 5%, 90%);
+
+    /* Cards */
+    --collection-card: hsl(210, 5%, 85%);
+    --collection-card-hover: hsl(210, 5%, 81%);
+    --collection-card-tag: hsl(210, 5%, 75%);
+
+    /* Hover color */
+    --accent: hsl(210, 5%, 80%);
+
+    /* Borders */
+    --line: hsl(210, 5%, 82%);
+
+    /* Scroll bar */
+    --scroll-primary-thumb: hsl(210, 5%, 70%);
+    --scroll-primary-track: hsl(210, 5%, 82%);
+    --scroll-secondary-thumb: hsl(210, 5%, 75%);
+    --scroll-secondary-track: hsl(210, 5%, 88%);
+
+    /* Floating elements */
+    --float: hsl(210, 5%, 90%);
+
+    /* Action buttons */
+    --action-primary: hsl(210, 40%, 70%);
+    --action-secondary: hsl(210, 20%, 70%);
+    --action-tertiary: hsl(210, 5%, 65%);
+  }
+
+  /* Ice White theme */
+  .ice-white {
+    /* Logo button gradients */
+    --logo-from: hsl(0, 0%, 95%);
+    --logo-to: hsl(0, 0%, 100%);
+
+    /* Background */
+    --background: hsl(0, 0%, 100%);
+
+    /* Navigational elements */
+    --nav-primary: hsl(0, 0%, 95%);
+    --nav-secondary: hsl(0, 0%, 100%);
+
+    /* Containers */
+    --container-primary: hsl(0, 0%, 98%);
+    --container-secondary: hsl(0, 0%, 100%);
+    --container-tertiary: hsl(0, 0%, 90%);
+
+    /* Text colors */
+    --tx-primary: hsl(0, 0%, 20%);
+    --tx-secondary: hsl(0, 0%, 55%);
+    --tx-tertiary: hsl(0, 0%, 70%);
+
+    /* Input elements */
+    --input-primary: hsl(0, 0%, 95%);
+    --input-secondary: hsl(0, 0%, 90%);
+    --input-tertiary: hsl(0, 0%, 92%);
+
+    /* Chat */
+    /* User message */
+    --chat-user-from: hsl(0, 0%, 85%);
+    --chat-user-to: hsl(0, 0%, 80%);
+    --chat-user-blockquote-bar: hsl(0, 0%, 70%);
+
+    /* Character message */
+    --chat-character-from: hsl(0, 0%, 80%);
+    --chat-character-to: hsl(0, 0%, 85%);
+    --chat-character-blockquote-bar: hsl(0, 0%, 90%);
+
+    /* Cards */
+    --collection-card: hsl(0, 0%, 85%);
+    --collection-card-hover: hsl(0, 0%, 81%);
+    --collection-card-tag: hsl(0, 0%, 75%);
+
+    /* Hover color */
+    --accent: hsl(0, 0%, 80%);
+
+    /* Borders */
+    --line: hsl(0, 0%, 82%);
+
+    /* Scroll bar */
+    --scroll-primary-thumb: hsl(0, 0%, 70%);
+    --scroll-primary-track: hsl(0, 0%, 82%);
+    --scroll-secondary-thumb: hsl(0, 0%, 75%);
+    --scroll-secondary-track: hsl(0, 0%, 88%);
+
+    /* Floating elements */
+    --float: hsl(0, 0%, 90%);
+
+    /* Action buttons */
+    --action-primary: hsl(0, 0%, 70%);
+    --action-secondary: hsl(0, 0%, 70%);
+    --action-tertiary: hsl(0, 0%, 65%);
+  }
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 1200;
+  font-display: swap;
+  src: url("/fonts/inter-var.ttf") format("truetype");
+}
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  /* Hard coded variables referenced by radix ui, cannot remove */
+  /* Don't use these in custom themes */
+  --popover: var(--float);
+  --popover-foreground: var(--tx-primary);
+  --radius: 0.8rem;
+  font-weight: 1000;
+  overflow-y: hidden
+}
+
+.scroll-primary::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-primary::-webkit-scrollbar-track {
+  background: var(--scroll-primary-track);
+  border-radius: 10px;
+}
+
+.scroll-primary::-webkit-scrollbar-thumb {
+  background: var(--scroll-primary-thumb);
+  border-radius: 10px;
+}
+
+.scroll-secondary::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scroll-secondary::-webkit-scrollbar-track {
+  background: var(--scroll-secondary-track);
+  border-radius: 10px;
+}
+
+.scroll-secondary::-webkit-scrollbar-thumb {
+  background: var(--scroll-secondary-thumb);
+  border-radius: 10px;
+}
+
+/* Disable number input up / down arrows  */
+@layer base {
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}

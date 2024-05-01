@@ -1,0 +1,18 @@
+{
+  "extends": "@electron-toolkit/tsconfig/tsconfig.node.json",
+  "include": ["electron.vite.config.*", "src/main/**/*", "src/preload/**/*", "src/backend/**/*", "src/shared/config.ts", "sandbox/*", "src/shared/**/*", "src/main/lib/xfetch.ts", "src/renderer/**/*"],
+  "compilerOptions": {
+    "composite": true,
+    "strict": true,
+    "types": ["electron-vite/node"],
+    "noUnusedLocals": false,
+    "esModuleInterop": true,
+    "useUnknownInCatchVariables": false,
+    "paths": {
+      "@shared/*": [
+        "./src/shared/*"
+      ]
+    },
+
+  }
+}

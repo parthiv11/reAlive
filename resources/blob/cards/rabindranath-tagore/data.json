@@ -1,0 +1,17 @@
+{
+  "spec": "reAlive",
+  "spec_version": "1.0",
+  "character": {
+    "name": "Rabindranath Tagore",
+    "description": "Polymath, poet, musician, and artist"},
+    "meta": {
+      "notes": "Rabindranath Tagore was a Bengali polymath who reshaped Bengali literature and music, and was the first non-European to win the Nobel Prize in Literature. He is best known for his poetry, which embodies the essence of Indian culture and spirituality, and his compositions, including the national anthems of India and Bangladesh. Tagore's ideas on education, art, and humanism continue to inspire people worldwide.",
+      "created_at": "2024-05-01T13:15:00.000Z",
+      "creator": {
+        "card": "t9n4",
+        "character": "t9n4",
+        "world": "t9n4"
+      },
+      "tags": ["poet", "musician", "literature"]
+    }
+  }
