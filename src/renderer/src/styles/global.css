@@ -330,15 +330,15 @@
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Happy School";
   font-style: normal;
   font-weight: 100 1200;
   font-display: swap;
-  src: url("/fonts/inter-var.ttf") format("truetype");
+  src: url("/fonts/happy-school.ttf") format("truetype");
 }
 
 :root {
-  --font-inter: "Inter", sans-serif;
+  --font-inter: "Happy School", sans-serif;
   /* Hard coded variables referenced by radix ui, cannot remove */
   /* Don't use these in custom themes */
   --popover: var(--float);
