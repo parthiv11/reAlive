@@ -12,7 +12,7 @@ files:
 asarUnpack:
   - resources/**
 win:
-  executableName: realive
+  executableName: reAlive
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}

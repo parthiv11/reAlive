@@ -22,7 +22,6 @@ import {
   cardsRootPath,
   copyFolder,
   extractZipToDir,
-  personasRootPath,
   unpackedPath
 } from "../utils";
 import sqlite from "./sqlite";

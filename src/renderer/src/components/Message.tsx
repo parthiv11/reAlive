@@ -81,7 +81,7 @@ export default function Message({
   const isEditing = editingMessageID === messageWithCandidates.id;
   const { name, avatar } =
     messageWithCandidates.sender === "user"
-      ? { name: "Parthiv", avatar: "realive:///profile.jpg" }
+      ? { name: "Parthiv", avatar: "default_avatar.png" }
       : { name: cardBundle.data.character.name, avatar: cardBundle.avatarURI };
   const isLatest = useMemo(
     () => messagesHistory.length > 0 && messagesHistory[messagesHistory.length - 1].id === messageID,

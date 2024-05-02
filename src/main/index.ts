@@ -7,7 +7,7 @@ import blob from "./lib/store/blob";
 import secret from "./lib/store/secret";
 import setting from "./lib/store/setting";
 import sqlite from "./lib/store/sqlite";
-import { cardsRootPath, personasRootPath } from "./lib/utils";
+import { cardsRootPath } from "./lib/utils";
 import { XFetchConfig, xfetch } from "./lib/xfetch";
 
 app.on("web-contents-created", (_event, contents) => {
@@ -75,20 +75,6 @@ app.whenReady().then(async () => {
       return net.fetch(path.join("file://", resolved));
     }
 
-    if (host === "personas") {
-      const resolved = path.resolve(path.join(personasRootPath, pathname));
-
-      if (!resolved.startsWith(personasRootPath)) {
-        return new Response(
-          `The requested path is unsafe.
-      Path given"${pathname}
-      Resolved to${resolved}
-      Resolved path is outside of the allowed directory: ${personasRootPath}"`,
-          { status: 400 }
-        );
-      }
-      return net.fetch(path.join("file://", resolved));
-    }
 
     return new Response(`Host "${host}" is unsupported.`, {
       status: 400,

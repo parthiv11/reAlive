@@ -1,4 +1,3 @@
-import fsp from "fs/promises";
 /**
  * Freeze an object along with all of it's properties and subproperties making it completely immutable.
  * This is useful because Object.freeze() only freezes the top level properties.
@@ -22,15 +21,6 @@ export function deepFreeze(object: any) {
   return Object.freeze(object);
 }
 
-export async function fileExists(path: string) {
-  try {
-    await fsp.access(path);
-    return true;
-  } catch {
-    // File doesn't exist or not accessible (e.g. no permissions)
-    return false;
-  }
-}
 
 /**
  * Remove all top level properties matching the blacklist from an object

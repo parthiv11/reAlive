@@ -9,7 +9,7 @@ import path, { dirname, join } from "path";
 // TODO, make sure all of these directories exists on init
 export const rootPath = process.env.NODE_ENV === "development" ? app.getAppPath() : dirname(app.getAppPath());
 export const dbPath = join(app.getPath("userData"), "realive.db");
-export const unpackedPath = join(rootPath, "/resources/");
+export const unpackedPath = process.env.NODE_ENV === "development" ? join(rootPath, "resources/") :join(rootPath, "app.asar.unpacked/resources/");
 export const migrationsDir =
   process.env.NODE_ENV === "development" ? join(rootPath, "resources/migrations") : join(unpackedPath, "migrations");
 
@@ -20,7 +20,6 @@ export const settingsPath = path.join(app.getPath("userData"), "settings.json");
 export const blobRootPath = path.join(app.getPath("userData"), "blob");
 // Directories for different types of blob data
 export const cardsRootPath = path.join(blobRootPath, "cards");
-export const personasRootPath = path.join(blobRootPath, "personas");
 
 /**
  * Checks if a file exists and is accessible at the specified path.
