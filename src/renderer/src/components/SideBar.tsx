@@ -11,7 +11,6 @@ import {
 import { card } from "@/lib/card";
 import {
   ArrowDownOnSquareIcon,
-  BookOpenIcon,
   ChatBubbleLeftRightIcon,
   Cog8ToothIcon,
   PencilSquareIcon,
@@ -20,6 +19,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { useRef } from "react";
 import { toast } from "sonner";
+import Tooltip from "./ui/tooltip";
 
 interface SideBarProps {
   page: string;
@@ -65,9 +65,11 @@ export default function SideBar({ page, setPage }: SideBarProps) {
       <div className="flex flex-col">
         <DropdownMenu>
           <DropdownMenuTrigger className="outline-none">
-            <Button variant="ghost" size="icon" className={"m-2 size-16 rounded-xl"}>
-              <PlusCircleIcon className="text-tx-secondary size-8" />
+            <Tooltip tip={'Add Character'} className={"bg-float text-tx-tertiary"}>
+              <Button variant="ghost" size="icon" className={"m-2 size-16 rounded-xl"}>
+                <PlusCircleIcon className="text-tx-secondary size-8" />
             </Button>
+            </Tooltip>
           </DropdownMenuTrigger>
           <DropdownMenuContent sideOffset={-15} className="*:text-tx-primary font-medium p-1.5">
             <DropdownMenuItem
@@ -88,19 +90,25 @@ export default function SideBar({ page, setPage }: SideBarProps) {
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
-        <Button variant="ghost" className="m-2 size-16 rounded-xl" onClick={() => setPage("chats")}>
+        <Tooltip tip={'Chats'} className={"bg-float text-tx-tertiary"}>
+          <Button variant="ghost" className="m-2 size-16 rounded-xl" onClick={() => setPage("chats")}>
           <ChatBubbleLeftRightIcon className="text-tx-secondary size-8" />
         </Button>
-        <Button
-          variant="ghost"
-          className="m-2 size-16 rounded-xl hover:bg-accent"
-          onClick={() => setPage("collections")}
-        >
-          <UserGroupIcon className="text-tx-secondary size-8" />
-        </Button>
-        <Button variant="ghost" className="m-2 size-16 rounded-xl hover:bg-accent" onClick={() => setPage("settings")}>
-          <Cog8ToothIcon className="text-tx-secondary size-8" />
-        </Button>
+        </Tooltip>
+        <Tooltip tip={'Characters'} className={"bg-float text-tx-tertiary"}>
+          <Button
+            variant="ghost"
+            className="m-2 size-16 rounded-xl hover:bg-accent"
+            onClick={() => setPage("collections")}
+          >
+            <UserGroupIcon className="text-tx-secondary size-8" />
+          </Button>
+        </Tooltip>
+        <Tooltip tip={'Setting'} className={"bg-float text-tx-tertiary"}>
+          <Button variant="ghost" className="m-2 size-16 rounded-xl hover:bg-accent" onClick={() => setPage("settings")}>
+            <Cog8ToothIcon className="text-tx-secondary size-8" />
+          </Button>
+        </Tooltip>
       </div>
 
       {/* Spacer */}
@@ -119,7 +127,7 @@ export default function SideBar({ page, setPage }: SideBarProps) {
         >
           <GitHubLogoIcon className="text-tx-tertiary size-7" />
         </Button>
-        
+
       </div>
     </div>
   );
