@@ -11,7 +11,7 @@ import {
 import { card } from "@/lib/card";
 import {
   ArrowDownOnSquareIcon,
-  ChatBubbleLeftRightIcon,
+  ChatBubbleBottomCenterIcon,
   Cog8ToothIcon,
   PencilSquareIcon,
   PlusCircleIcon,
@@ -92,7 +92,7 @@ export default function SideBar({ page, setPage }: SideBarProps) {
         </DropdownMenu>
         <Tooltip tip={'Chats'} className={"bg-float text-tx-tertiary"}>
           <Button variant="ghost" className="m-2 size-16 rounded-xl" onClick={() => setPage("chats")}>
-          <ChatBubbleLeftRightIcon className="text-tx-secondary size-8" />
+          <ChatBubbleBottomCenterIcon className="text-tx-secondary size-8" />
         </Button>
         </Tooltip>
         <Tooltip tip={'Characters'} className={"bg-float text-tx-tertiary"}>
