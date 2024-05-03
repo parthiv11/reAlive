@@ -1,5 +1,7 @@
-# re:Alive: Connect with the Past, Explore the Future
 
+<p align="center">
+<h1> re:Alive: Connect with the Past, Explore the Future </h1>
+</p>
 <p align="center">
   <img src="https://github.com/parthiv11/reAlive/assets/75653580/a49f1484-6347-4023-ae85-9d7f8c5599b9" alt="re:Alive Logo">
 </p>
