@@ -1,8 +1,8 @@
 # re:Alive: Connect with the Past, Explore the Future
 
-<div align='centre'>
-![re:Alive Logo](https://github.com/parthiv11/reAlive/assets/75653580/a49f1484-6347-4023-ae85-9d7f8c5599b9)
-</div>
+<p align="center">
+  <img src="https://github.com/parthiv11/reAlive/assets/75653580/a49f1484-6347-4023-ae85-9d7f8c5599b9" alt="re:Alive Logo">
+</p>
 
 re:Alive is your gateway to conversations with historical figures, philosophers, scientists, and innovators of the past. Powered by Gemini and inspired by the visionary Steve Jobs, this cross-platform desktop app opens up a world of dialogue, learning, and inspiration.
 
