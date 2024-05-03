@@ -1,69 +1,65 @@
-# re:Alive
+# re:Alive: Connect with the Past, Explore the Future
 
-re:Alive is an Electron application powered by Gemini, designed to facilitate conversations with historical figures, renowned intellectuals, and innovators who are no longer accessible. Inspired by the vision of Steve Jobs for the future, re:Alive allows users to engage in dialogues with these personalities, gain insights, learn complex topics, and even receive feedback on their ideas.
+![re:Alive Logo](https://github.com/parthiv11/reAlive/assets/75653580/logo.png)
 
-![re:Alive Interface](https://example.com/realive-interface.png)
+re:Alive is your gateway to conversations with historical figures, philosophers, scientists, and innovators of the past. Powered by Gemini and inspired by the visionary Steve Jobs, this cross-platform desktop app opens up a world of dialogue, learning, and inspiration.
 
-## Features
+## Features 🌟
 
-- **Create New Characters:** Users can create new AI personas based on historical figures or import existing ones.
+- **Create New Characters:** Bring historical figures to life or import existing personas.
+  ![Create New Characters](https://github.com/parthiv11/reAlive/assets/75653580/aae8f515-c546-45cf-a122-dfa74d4a0ef9)
+
+- **Export/Import/Share Characters:** Share your creations with others or import characters shared by the community.
+
+- **Themes:** Customize your experience with different themes.
+  ![themes](https://github.com/parthiv11/reAlive/assets/75653580/5c025aac-c2b0-4b8b-a380-9d8ef01cf26d)
+
+
+- **Multichat Support:** Engage in conversations with multiple historical figures simultaneously for an immersive experience.
+  ![Multichat Support](https://github.com/parthiv11/reAlive/assets/75653580/42962eef-5910-4c02-98ab-77c81dd0c57e)
+
+
+## Use Cases 🤔
+
+- **Conversations with Famous Personalities:** Gain insights from historical figures, philosophers, mathematicians, and more.
   
-  ![Create New Characters](https://example.com/create-new-character.gif)
+- **Learning Complex Topics:** Seek guidance on complex topics from experts like Aristotle or Ramanujan.
 
-- **Export/Import/Share Characters:** Share your created characters with others or import characters shared by the community.
+- **Feedback from Innovators:** Share your ideas with great entrepreneurs like Steve Jobs and refine your concepts.
+
+- **Interview Practice:** Hone your skills by practicing interviews with AI versions of innovators.
+
+## Planned Features 🚀
+
+- **Audio Support with Voice Cloning:** Immerse yourself in audio conversations with voice cloning technology.
   
-  ![Export/Import/Share Characters](https://example.com/export-import-share.gif)
-
-- **Multichat Support:** Engage in conversations with multiple historical figures simultaneously for a dynamic and immersive experience.
+- **Real-time Video/Avatar Interaction:** Enhance user experience with video or avatar support for interactions.
   
-  ![Multichat Support](https://example.com/multichat-support.gif)
-
-## Few Use Cases
-
-- **Conversations with Famous Personalities:** Interact with historical figures, philosophers, mathematicians, scientists, and entrepreneurs to gain their perspectives on various subjects.
+- **RAG and Multimodal Support:** Enrich conversations with RAG system and Multimodal inputs.
   
-  ![Conversations with Famous Personalities](https://example.com/conversations.gif)
-
-- **Learning Complex Topics:** Seek guidance and explanations on complex topics from experts in the field, such as Aristotle for philosophy or Srinivasa Ramanujan for mathematics.
+- **Local LLM Model Support:** Ensure privacy and customization with locally hosted models.
   
-  ![Learning Complex Topics](https://example.com/learning.gif)
+- **Expanded LLM Support:** Integrate with OpenAI, Anthropic, and Llama for diverse perspectives.
 
-- **Feedback from Innovators:** Share your ideas with great entrepreneurs like Steve Jobs and receive feedback to refine and improve your concepts.
-  
-  ![Feedback from Innovators](https://example.com/feedback.gif)
+## Usage 🎮
 
-- **Interview Practice:** Hone your communication skills by practicing interviews with AI versions of innovators and gain insights into their thought processes.
-  
-  ![Interview Practice](https://example.com/interview-practice.gif)
+### From Source
+```bash
+git clone https://github.com/parthiv11/reAlive
+cd reAlive
+npm install
+npm run dev 
+```
 
-## Planned Features
+### For Windows
+Download .exe from releases and chat with your inspiration or idol.
 
-- **Audio Support with Voice Cloning:** Enable audio conversations with voice cloning technology for a more immersive experience.
-  
-- **Real-time Video/Avatar Interaction:** Enhance the user experience with video or avatar support for real-time interactions.
-  
-- **RAG and Multimodal Support:** Incorporate RAG system and Multimodal inputs for richer conversations.
-  
-- **Local LLM Model Support:** Enable users to utilize locally hosted models for increased privacy and customization.
-  
-- **Expanded LLM Support:** Integrate with other language models like OpenAI, Anthropic, and Llama to offer a diverse range of perspectives and expertise.
+## Contributions 🤝
 
-## Usage
+Contributions to re:Alive are welcome! Share your ideas, improvements, or bug fixes through pull requests or GitHub issues.
 
-1. Download and install the re:Alive Electron application.
-2. Launch the application and choose a historical figure or topic of interest to engage with.
-3. Type your queries or share your ideas to start the conversation.
-4. Interact with the AI-generated responses and explore various topics.
-5. Provide feedback or suggest improvements for future versions of the application.
+## Acknowledgements 🙏
 
-## Contributions
+re:Alive is a tribute to Steve Jobs' vision and his foresight in connecting people with the wisdom of the past. Special thanks to [anime.gf](https://github.com/cyanff/anime.gf) for design and UI support.
 
-Contributions to re:Alive are welcome! If you have ideas for new features, improvements, or bug fixes, feel free to submit a pull request or open an issue on the GitHub repository.
-
-## Acknowledgements
-
-re:Alive is a tribute to the vision of Steve Jobs and his foresight regarding the potential of AI to connect people with the wisdom of the past. Special thanks to anime.gf for design and UI support.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Feel free to reach out and embark on your journey of knowledge and inspiration with re:Alive!

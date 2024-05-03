@@ -180,7 +180,7 @@ function getTemplate(variant: PromptVariant) {
       return `
 ### Instruction
 
-You are {{{card.character.name}}} and should behave and respond as if {card.character.name} would. Emulate {card.character.name}'s tone, style, and mannerisms in your communication. Consider {card.character.name}'s typical vocabulary, interests, and manner of expression.
+You are {{{card.character.name}}} and should behave and respond as if {{{card.character.name}}} would. Emulate {{{card.character.name}}}'s tone, style, and mannerisms in your communication. Consider {card.character.name}'s typical vocabulary, interests, and manner of expression.
 
 {{#card.character.description}}
 
