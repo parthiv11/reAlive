@@ -3,7 +3,7 @@ name: Build and Release re:Alive
 on:
   push:
     tags:
-      - 'v*.*.*'  # Trigger on version tags like v1.0.0
+      - 'v*.*.*'  # Trigger on version tags (e.g., v1.0.0)
   workflow_dispatch: {}
 
 jobs:
@@ -12,7 +12,16 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        include:
+          - os: ubuntu-latest
+            buildCommand: "npm run build:linux"
+            artifactName: "reAlive-linux.zip"
+          - os: macos-latest
+            buildCommand: "npm run build:mac"
+            artifactName: "reAlive-macos.zip"
+          - os: windows-latest
+            buildCommand: "npm run build:win"
+            artifactName: "reAlive-windows.zip"
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -20,34 +29,44 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Change to your preferred Node.js version
+          node-version: '16'  # Adjust if needed
 
       - name: Install Dependencies
-        run: npm i
+        run: npm ci
 
-      - name: Build re:Alive
-        run: npm run build
+      - name: Run Build Command
+        run: ${{ matrix.buildCommand }}
 
-      - name: Package Release with Elector
-        run: npx elector release --platform ${{ matrix.os }} --output dist/${{ matrix.os }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+      # Assuming electron-builder outputs the packaged app into the "dist" folder.
+      # Adjust the path below if your build produces the artifact elsewhere.
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: reAlive-${{ matrix.os }}
-          path: dist/${{ matrix.os }}
-
+          name: ${{ matrix.artifactName }}
+          path: dist/
+  
   release:
     name: Create GitHub Release
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Download Build Artifacts
+      - name: Download Linux Artifact
         uses: actions/download-artifact@v4
         with:
-          path: artifacts
+          name: reAlive-linux.zip
+          path: artifacts/linux
+
+      - name: Download macOS Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: reAlive-macos.zip
+          path: artifacts/macos
+
+      - name: Download Windows Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: reAlive-windows.zip
+          path: artifacts/windows
 
       - name: Create Release
         id: create_release
@@ -57,32 +76,32 @@ jobs:
           name: Release ${{ github.ref }}
           body: |
             This release contains builds for Linux, Windows, and macOS.
-      
-      - name: Upload Linux Artifact
+
+      - name: Upload Linux Artifact to Release
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: artifacts/reAlive-ubuntu-latest/
+          asset_path: artifacts/linux
           asset_name: reAlive-linux.zip
           asset_content_type: application/zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload macOS Artifact
+      - name: Upload macOS Artifact to Release
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: artifacts/reAlive-macos-latest/
+          asset_path: artifacts/macos
           asset_name: reAlive-macos.zip
           asset_content_type: application/zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload Windows Artifact
+      - name: Upload Windows Artifact to Release
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: artifacts/reAlive-windows-latest/
+          asset_path: artifacts/windows
           asset_name: reAlive-windows.zip
           asset_content_type: application/zip
         env:
