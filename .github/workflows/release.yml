@@ -3,8 +3,8 @@ name: Build and Release re:Alive
 on:
   push:
     tags:
-      - 'v*.*.*'  # Trigger on version tags (e.g., v1.0.0)
-  workflow_dispatch: {}
+      - 'v*.*.*'  # Trigger on version tags like v1.0.0
+  workflow_dispatch:
 
 jobs:
   build:
@@ -29,16 +29,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Adjust if needed
+          node-version: '16'  # Adjust the Node version if needed
 
       - name: Install Dependencies
-        run: npm i
+        run: npm ci --ignore-optional
 
       - name: Run Build Command
         run: ${{ matrix.buildCommand }}
 
-      # Assuming electron-builder outputs the packaged app into the "dist" folder.
-      # Adjust the path below if your build produces the artifact elsewhere.
+      # Adjust the path below if your build command outputs the package elsewhere
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
